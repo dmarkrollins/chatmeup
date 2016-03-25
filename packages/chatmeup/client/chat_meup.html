@@ -1,0 +1,34 @@
+<template name="chatform">
+
+
+
+        <div class='row'>
+
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <div id="chatwindow" style="padding:7px; width: 100%; height: 300px; overflow-y: scroll; border: 1px #ccc solid; margin-bottom: 7px;">
+                    {{#each chats}}
+                        <div class="alert alert-{{color}}" role="alert">{{chatter}}</div>
+                    {{/each}}
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class='row'>
+
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="txtChatInput" placeholder="Enter your chat">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+</template>
